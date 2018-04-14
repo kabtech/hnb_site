@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hattie Bestul</title>
+<link rel="stylesheet" href="main.css">
+<script src="./script/main.js"></script>
+</head>
+<body onload="javascript:fnShowHide('HOME')">
+<div id="headerDiv">
+<span style="line-height:100%;"><span style="line-height:100%;font-size:4.0em;font-weight:semi-bold;">Hattie Bestul</span><br/>
+<span style="font-size: 2.0em;">Human &#8594; Artist &#8594; Musician &#8594; Clarinetist</span></span><br/>
+<hr/>
+<a id="navHome" href="javascript:fnShowHide('HOME')" class="navHighlight">HOME</a> | <a id="navBio" href="javascript:fnShowHide('BIO');" class="navNormal">BIO</a> | <a id="navContact" href="javascript:fnShowHide('CONTACT');" class="navNormal">CONTACT</a> | <a id="navFollow" href="javascript:fnShowHide('FOLLOW');" class="navNormal">FOLLOW</a> | <a id="navArtistry" href="javascript:fnShowHide('ARTISTRY');" class="navNormal">ARTISTRY</a> | <a id="navLikes" href="javascript:fnShowHide('LIKES');" class="navNormal">LIKES</a>
+</div>
+<div id="HOME" class="sectionStandard">
+<img class="homeImg" src="./img/hnb_front_page.jpeg">
+</div>
+<div id="BIO" class="sectionStandard">
+<br/><p class="sectionParagraph">
+<img class="rightImg" src="./img/TheLaurelTrio_MontanariPhotography_crop.jpg">
+Clarinetist Hattie Bestul strives to inspire passion, kindness, and courage in others through 
+music. Her focus is making music accessible to people of all circumstances through performance 
+and education. Hattie&apos;s desire to share music&apos;s benefits compelled her to develop and teach 
+an exploratory music course, &quot;Beyond the Notes,&quot; at the University of Wisconsin - Madison 
+College for Kids program and to give creative music presentations in middle and high school 
+music classrooms. Most recently Hattie returned as a guest artist with an interactive presentation 
+to the rural Wisconsin, Kickapoo Valley Area school where she first began playing clarinet. 
+In addition to working with youth, Hattie is actively designing innovative concert experiences 
+tailored to give all audiences a greater personal connection to music. To this end, Hattie 
+has given recitals that included audience engagement through interactive teaching artistry 
+and the premier performances of modern composers&apos; works. 
+<br/><br/>
+Though she is a Colorado native, Hattie grew up in Wisconsin and now calls the Madison area 
+home. It was her time performing in the Wisconsin Youth Symphony Orchestra that set the stage 
+for her pursuit of music as a career. As an undergraduate at the University of Nebraska - Lincoln 
+Glenn Korff School of Music, Hattie&apos;s most treasured experiences include: performing Brahms&apos;s 
+Clarinet Quintet as a guest artist with the Chiara String Quartet, soloing with the UNL Wind 
+Ensemble, and performing as a member of the Laurel Trio (a cello, clarinet, piano chamber 
+ensemble). Having completed a Business Minor along with a Bachelor degree in Music Performance 
+at UNL with Dr. Diane Barger, Hattie has continued her studies at the Eastman School of Music 
+in the clarinet studio of Ken Grant and currently resides in Rochester, NY. 
+<br/><br/>
+Continually refining her focus on avenues for community arts programs, teaching artistry, 
+and performance innovations, Hattie was accepted into Eastman&apos;s Arts Leadership Program 
+(ALP) in August 2016. As an ALP Fellow, Hattie is excited to take on internships in Development 
+and Operations with ROCmusic Collaborative in the Fall 2017 as well as in Development and 
+Marketing for the Eastman Community Music School in the Spring of 2018. Hattie will graduate 
+in May 2018 with an Arts Leadership Certificate as well as a Masters in Music in Performance 
+and Literature. Following completion of this degree, Hattie plans to launch her career as a 
+performer and teaching artist in order to expand art and music&apos;s impact on communities.
+<br/><br/>
+<span style="font-weight: 600;">Eastman School of Music</span> expected completion Spring 2018<br/>
+Master of Music Performance and Literature - Clarinet<br/>
+Arts Leadership Certificate Fellow
+<br/><br/>
+<span style="font-weight: 600;">University of Nebraska - Lincoln, Glenn Korff School of Music</span> 2012 - 2016<br/>
+Bachelor of Music, Clarinet Performance<br/>
+Business Administration Minor<br/>
+Glenn Korff Distinguished Undergraduate Artist and Scholar Award Winner<br/>
+High Honors Graduate
+</p>
+<br/>
+</div>
+<div id="CONTACT"  class="sectionStandard">
+<table>
+<tr>
+<td width="500px">
+<br/>
+	<div class="slideshow-container-contact">
+	  <div class="mySlidesContact fade">
+	    <a href="#" target="_blank"><img src="./img/h300EastmanWindEnsembleJan2017.jpg" style="height:100%"></a>
+	  </div>
+	  <div class="mySlidesContact fade">
+	    <img src="./img/h300OvertureCenter.jpg" style="height:100%">
+	  </div>
+	  <div class="mySlidesContact fade">
+	    <img src="./img/h300NMFTrio.jpg" style="height:100%">
+	  </div>
+	</div>
+	<br/>
+	<div style="text-align:center">
+	  <span class="dotContact"></span> 
+	  <span class="dotContact"></span>
+	  <span class="dotContact"></span> 
+    </div>
+<script>
+var slideContactIndex = 0;
+showSlidesContact();
+
+function showSlidesContact() {
+    var i;
+    var slidesContact = document.getElementsByClassName("mySlidesContact");
+    var dotsContact = document.getElementsByClassName("dotContact");
+    for (i = 0; i < slidesContact.length; i++) {
+       slidesContact[i].style.display = "none";  
+    }
+    slideContactIndex++;
+    if (slideContactIndex> slidesContact.length) {slideContactIndex = 1;}    
+    for (i = 0; i < dotsContact.length; i++) {
+        dotsContact[i].className = dotsContact[i].className.replace(" active", "");
+    }
+    slidesContact[slideContactIndex-1].style.display = "block";  
+    dotsContact[slideContactIndex-1].className += " active";
+    setTimeout(showSlidesContact, 3000); // Change image every 3 seconds
+}
+</script>
+</td>
+<td style="text-align:left;">
+Email: <a href="mailto:hattie.bestul@bestul.us">hattie@bestul.us</a><br/>
+Hattie Bestul currently lives in Rochester, NY.<br/>
+Contact for Lessons, Classes, &amp; Performances.<br/>
+</td>
+</tr>
+</table>
+</div>
+<div id="FOLLOW" style="height: 520px;" class="sectionStandard">
+<br/>
+<div style="height:80;"><a href="https://www.instagram.com/hattiebestul/" target="_blank"><img src="./img/glyph_instagram40.png" style="height:100%;padding-right:20px;vertical-align:middle;"></a><span style="display: inline-block;vertical-align:middle;"><a href="https://www.instagram.com/hattiebestul/" target="_blank">Follow me on Instagram</a></span></div>
+<br/>
+	<div class="slideshow-container-follow">
+	  <div class="mySlides fade">
+	  <div class="numbertext"></div>
+	    <a href="https://www.instagram.com/p/BVd49m3Faup/" target="_blank"><img src="./img/400chestertown.jpg" style="height:100%"></a>
+	    <div class="text"></div>
+	  </div>
+	  <div class="mySlides fade">
+	    <div class="numbertext"></div>
+	    <a href="https://www.instagram.com/p/BUVvUSHld6B/" target="_blank"><img src="./img/400MaestroSmith.jpg" style="height:100%"></a>
+	    <div class="text"></div>
+	  </div>
+	  <div class="mySlides fade">
+	    <div class="numbertext"></div>
+	    <a href="https://www.instagram.com/p/BQLpx_MA9GG/" target="_blank"><img src="./img/400Beethoven5.jpg" style="height:100%"></a>
+	    <div class="text"></div>
+	  </div>
+	  <div class="mySlides fade">
+	    <div class="numbertext"></div>
+	    <a href="https://www.instagram.com/p/BQE4IN3AHsN/" target="_blank"><img src="./img/400MezzanineCrew.jpg" style="height:100%"></a>
+	    <div class="text"></div>
+	  </div>
+	  <div class="mySlides fade">
+	    <div class="numbertext"></div>
+	    <a href="https://www.instagram.com/p/BPIYBzoAybl/" target="_blank"><img src="./img/400Caffeinate.jpg" style="height:100%"></a>
+	    <div class="text"></div>
+	  </div>
+	  <div class="mySlides fade">
+	    <div class="numbertext"></div>
+	    <a href="https://www.instagram.com/p/BXwk7tJl9Ei/" target="_blank"><img src="./img/400GatewayMusicFestival.jpg" style="height:100%"></a>
+	    <div class="text"></div>
+	  </div>
+	 </div>
+	  <br/>
+		<div style="text-align:center">
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span>
+		  <span class="dot"></span>
+		  <span class="dot"></span>
+		  <span class="dot"></span>
+	    </div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1;}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+<br/>
+</div>
+<div id="ARTISTRY" class="sectionStandard">
+<br/>
+<table class="sectionParagraph">
+<tr>
+<td>
+<img class ="artistryImage" src="./img/w250roots2.jpg">
+</td>
+<td>
+<div style="padding-left:6px;"><span style="font-weight: 600;">Wisconsin Roots</span><br/>
+In May 2017 Hattie returned to her clarinet roots in rural Wisconsin as a guest artist at 
+the Kickapoo Area School District middle and high school band classes. She worked with 
+students through an interactive presentation and performance where they considered patterns 
+and their context in music and experimented with expression in cases of repetition.</div>
+</td>
+</tr>
+</table>
+<table class="sectionParagraph">
+<tr>
+<td>
+<span style="font-weight: 600;">Beyond the Notes</span><br/>
+In Summer 2015 Hattie developed and taught &quot;Beyond the Notes&quot; an exploratory music course 
+for rising 6th graders in the last year of UW-Madison&apos;s College for Kids Program. Daily 
+clarinet performances by Hattie were paired with corresponding creative projects.  The class 
+covered basic musical concepts, physics of sound waves, the human ear, music history, 
+and performance anxiety.
+</td>
+<td>
+<img class ="artistryImage" src="./img/w250uw.png">
+</td>
+</tr>
+</table>
+<table class="sectionParagraph">
+<tr>
+<td>
+<img class ="artistryImage" src="./img/w250Imaginings.png">
+</td>
+<td>
+<div style="padding-left:6px;"><span style="font-weight: 600;">Imaginings: A Recital of New Works for Clarinet -- April 2015</span><br/>
+Hattie held a recital featuring three world premieres by three UNL students/alumni on 
+April 26, 2015. The program centered on Daniel Baldwin&#8217;s &quot;Imaginings,&quot; a work composed 
+for Hattie Bestul and inspired by a poem by Sallie Bestul. Also featured were Rachel 
+Whelan&#8217;s Sonata for Clarinet, and Jared Brinkman&#8217;s Night Thoughts.</div>
+</td>
+</tr>
+</table>
+<table class="sectionParagraph">
+<tr>
+<td>
+<span style="font-weight: 600;">Music for Everyone Initiative</span><br/>
+The Music for Everyone Initiative aimed to invite community -- particularly young 
+musicians -- to UNL student recitals during Fall 2014. Through teaching artist 
+presentations and a web sign-up, over 200 people received student recital 
+notifications, and Hattie&#8217;s audience-interactive junior recital titled Music for 
+Everyone launched the initiative in October 2014.
+</td>
+<td>
+<img class ="artistryImage" src="./img/w250musicforeveryone.jpg">
+</td>
+</tr>
+</table>
+<br/>
+</div>
+<div id="LIKES" class="sectionStandard">
+<br/><p class="sectionParagraph">
+<span style="font-weight: 600;">Music and Impact</span><br/><br/>
+Benjamin Zander<br/>
+<span class="likesListPadding">TED talk: <a href="https://www.ted.com/talks/benjamin_zander_on_music_and_passion">https://www.ted.com/talks/benjamin_zander_on_music_and_passion</a></span>
+<br/><br/>
+Eric Booth<br/>
+<span class="likesListPadding">Book: &quot;The Music Teaching Artist&#8217;s Bible&quot;</span><br/>
+<span class="likesListPadding"><a href="http://ericbooth.net/">http://ericbooth.net/</a></span>
+<br/><br/>
+<span style="font-weight: 600;">Wellbeing &amp; Mindset</span><br/><br/>
+Dana Fonteneau<br/>
+<span class="likesListPadding">Book: &quot;It&#8217;s Not (Just) About the Gig&quot;</span><br/>
+<span class="likesListPadding"><a href="http://wholeheartedmusician.com/">http://wholeheartedmusician.com/</a></span>
+<br/><br/>
+Bren&#233; Brown<br/>
+<span class="likesListPadding">Book: Daring Greatly</span><br/>
+<span class="likesListPadding">TED talk: <a href="https://www.ted.com/talks/brene_brown_on_vulnerability">https://www.ted.com/talks/brene_brown_on_vulnerability</a></span>
+<br/><br/>
+Amy Cuddy<br/>
+<span class="likesListPadding">TED talk: <a href="https://www.ted.com/talks/amy_cuddy_your_body_language_shapes_who_you_are">https://www.ted.com/talks/amy_cuddy_your_body_language_shapes_who_you_are</a></span>
+<br/><br/>
+<span style="font-weight: 600;">Clarinet Gear</span><br/><br/>
+Lisa&#8217;s Clarinet Shop<br/>
+<span class="likesListPadding"><a href="https://lisasclarinetshop.com/">https://lisasclarinetshop.com/</a></span>
+<br/><br/>
+Sayre Woodwinds (service/repair)<br/>
+<span class="likesListPadding">Rick Sayre</span><br/>
+<span class="likesListPadding">Appointments by phone: 630.916.1525</span><br/>
+<span class="likesListPadding">364 Pennsylvania Avenue Glen Ellyn, IL 60137</span>
+<br/><br/>
+Silverstein Works Ligatures<br/>
+<span class="likesListPadding"><a href="https://www.silversteinworks.com/product/cryo4-ligature/">https://www.silversteinworks.com/product/cryo4-ligature/</a></span>
+</p>
+<br/>
+</div>
+<div id="footerDiv">
+&copy;2017 Hattie Bestul | hattie@bestul.us
+</div>
+</body>
+</html>
